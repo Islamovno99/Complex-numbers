@@ -27,7 +27,6 @@ class Complex {
         friend Complex operator- (const double&, const Complex& );
         friend Complex operator* (const double&, const Complex& );
 
-
         Complex operator+ ( const Complex& );
         Complex operator- ( const Complex& );
         Complex operator* ( const Complex& );
