@@ -7,7 +7,7 @@ using namespace std;
 
 class Complex {
     double Re;
-	double Im;
+    double Im;
 
 	public:
         Complex( double aRe = 0, double aIm = 0 );
