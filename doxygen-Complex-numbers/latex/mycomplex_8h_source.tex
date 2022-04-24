@@ -1,0 +1,58 @@
+\hypertarget{mycomplex_8h_source}{}\doxysection{mycomplex.\+h}
+\label{mycomplex_8h_source}\index{D:/Project git/Complex numbers/mycomplex.h@{D:/Project git/Complex numbers/mycomplex.h}}
+\mbox{\hyperlink{mycomplex_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef \_MY\_COMPLEX\_H\_}}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00009}00009 \textcolor{preprocessor}{\#define \_MY\_COMPLEX\_H\_}}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00011}00011 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00016}\mbox{\hyperlink{class_complex}{00016}} \textcolor{keyword}{class }\mbox{\hyperlink{class_complex}{Complex}} \{}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00020}\mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{00020}}     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_complex_aed0f7f2a72da406620581d863a6dc333}{Re}};}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00025}\mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{00025}}     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_complex_a25938efdb07e8d21e4a07392a3494e0b}{Im}};}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00027}00027     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00028}00028         \mbox{\hyperlink{class_complex_a7bf9edc279e3a3fda953bf2112f3d1bb}{Complex}}( \textcolor{keywordtype}{double} aRe = 0, \textcolor{keywordtype}{double} aIm = 0 );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00029}00029         \mbox{\hyperlink{class_complex_a7bf9edc279e3a3fda953bf2112f3d1bb}{Complex}}( \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00030}00030         \mbox{\hyperlink{class_complex_a70e14b17c92e3da779686b98f9f3bb2d}{\string~Complex}}();}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00032}00032         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_complex_ae89f691ae1104d55c8beb8075931890a}{Set}}( \textcolor{keywordtype}{double} aRe, \textcolor{keywordtype}{double} aIm = 0 );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00034}00034         \textcolor{keyword}{operator} double();}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00036}00036         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_complex_a58d7c29c61d424236f183767ed57b716}{abs}}();}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00038}00038         \textcolor{keyword}{friend} istream\& \mbox{\hyperlink{class_complex_a174fdd74c309077d205a1bd3835f813c}{operator >> }}( istream\&, \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00039}00039         \textcolor{keyword}{friend} ostream\& \mbox{\hyperlink{class_complex_a2d0bfeec8443b074bca8a050fc55ddd1}{operator << }}( ostream\&, \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00041}00041         \textcolor{keyword}{friend} \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a7a114a16a50d0f8663acbc2adbbb12c1}{operator+ }}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\&, \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00042}00042         \textcolor{keyword}{friend} \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a3d1644387325ea40d238936a67c8b047}{operator-\/ }}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\&, \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00043}00043         \textcolor{keyword}{friend} \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a3e768eb0064f8355c8cfe656149e250c}{operator* }}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\&, \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00045}00045         \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a7a114a16a50d0f8663acbc2adbbb12c1}{operator+ }}( \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00046}00046         \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a3d1644387325ea40d238936a67c8b047}{operator-\/ }}( \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00047}00047         \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a3e768eb0064f8355c8cfe656149e250c}{operator* }}( \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00049}00049         \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a0314b2c799b357147463298242d00950}{operator/ }}( \textcolor{keyword}{const} \textcolor{keywordtype}{double}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00050}00050         \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a7a114a16a50d0f8663acbc2adbbb12c1}{operator+ }}( \textcolor{keyword}{const} \textcolor{keywordtype}{double}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00051}00051         \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a3d1644387325ea40d238936a67c8b047}{operator-\/ }}( \textcolor{keyword}{const} \textcolor{keywordtype}{double}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00052}00052         \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{class_complex_a3e768eb0064f8355c8cfe656149e250c}{operator* }}( \textcolor{keyword}{const} \textcolor{keywordtype}{double}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00054}00054         \mbox{\hyperlink{class_complex}{Complex}}\& \mbox{\hyperlink{class_complex_a20043a6aeae9bc2db6b6a4f12cf9aff8}{operator+= }}( \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00055}00055         \mbox{\hyperlink{class_complex}{Complex}}\& \mbox{\hyperlink{class_complex_a25d8bcc51e0df77449db1b715112f7c3}{operator-\/= }}( \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00056}00056         \mbox{\hyperlink{class_complex}{Complex}}\& \mbox{\hyperlink{class_complex_ab8a1dade297c4603c96e7a5ee7ac6e6d}{operator*= }}( \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00057}00057         \mbox{\hyperlink{class_complex}{Complex}}\& \mbox{\hyperlink{class_complex_a18f1ec95391babdae864ae482daf5884}{operator=  }}( \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00059}00059         \mbox{\hyperlink{class_complex}{Complex}}\& \mbox{\hyperlink{class_complex_a20043a6aeae9bc2db6b6a4f12cf9aff8}{operator+= }}( \textcolor{keyword}{const} \textcolor{keywordtype}{double}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00060}00060         \mbox{\hyperlink{class_complex}{Complex}}\& \mbox{\hyperlink{class_complex_a25d8bcc51e0df77449db1b715112f7c3}{operator-\/= }}( \textcolor{keyword}{const} \textcolor{keywordtype}{double}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00061}00061         \mbox{\hyperlink{class_complex}{Complex}}\& \mbox{\hyperlink{class_complex_ab8a1dade297c4603c96e7a5ee7ac6e6d}{operator*= }}( \textcolor{keyword}{const} \textcolor{keywordtype}{double}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00062}00062         \mbox{\hyperlink{class_complex}{Complex}}\& \mbox{\hyperlink{class_complex_aa328e81d655dcc03b3179e021a78e4c4}{operator/= }}( \textcolor{keyword}{const} \textcolor{keywordtype}{double}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00063}00063         \mbox{\hyperlink{class_complex}{Complex}}\& \mbox{\hyperlink{class_complex_a18f1ec95391babdae864ae482daf5884}{operator=  }}( \textcolor{keyword}{const} \textcolor{keywordtype}{double}\& );}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00064}00064 \};}
+\DoxyCodeLine{\Hypertarget{mycomplex_8h_source_l00065}00065 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

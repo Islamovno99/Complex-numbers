@@ -1,19 +1,36 @@
+/*!
+    @file
+    @brief Файл с описанием методов класса Complex
+*/
+
 #include <iostream>
 #include <cmath>
 #include "mycomplex.h"
 
 using namespace std;
 
+/*!
+    @brief Конструктор класса
+    @param aRe Действительная составляющая
+    @param aIm Мнимая составляющая
+*/
 Complex::Complex( double aRe, double aIm ) {
     Re = aRe;
     Im = aIm;
 }
 
+/*!
+    @brief Конструктор класса
+    @param aRval Комплексное число
+*/
 Complex::Complex( const Complex& aRval ) {
     Re = aRval.Re;
     Im = aRval.Im;
 }
 
+/*!
+    @brief Деструктор класса
+*/
 Complex::~Complex() {
     Re = 0.0;
     Im = 0.0;
@@ -24,6 +41,10 @@ void Complex::Set( double aRe, double aIm ) {
     Im = aIm;
 }
 
+/*!
+    @brief Возвращает модуль комплексного числа
+    @return модуль комплексного числа
+*/
 Complex::operator double() {
     return abs();
 }
@@ -46,11 +67,11 @@ Complex Complex::operator- ( const Complex& aRval ) {
     return Result;
 }
 
-Complex Complex::operator+ ( const double& aval ) {
-    Complex result;
-    result.Re = Re + aval;
-    result.Im = Im;
-    return result;
+Complex Complex::operator+ ( const double& aRval ) {
+    Complex Result;
+    Result.Re = Re + aRval;
+    Result.Im = Im;
+    return Result;
 }
 
 Complex Complex::operator- ( const  double& aRval ) {
@@ -80,9 +101,9 @@ Complex Complex::operator/ ( const double& aRval ) {
     return Result;
 }
 
-Complex& Complex::operator+=  ( const Complex& arval) {
-    Re += arval.Re;
-    Im += arval.Im;
+Complex& Complex::operator+=  ( const Complex& aRval) {
+    Re += aRval.Re;
+    Im += aRval.Im;
     return *this;
 }
 
@@ -132,16 +153,16 @@ Complex& Complex::operator= ( const double& aRval ) {
     return *this;
 }
 
-istream& operator >> ( istream& stream, Complex& a ) {
+istream& operator >> ( istream& stream, Complex& aRval ) {
     char tmp[256];
-    stream >> a.Re >> a.Im >> tmp;
+    stream >> aRval.Re >> aRval.Im >> tmp;
     return stream;
 }
 
-ostream& operator << ( ostream& stream, Complex& a ) {
-    stream << a.Re;
-    if( !( a.Im < 0 ) ) stream << '+';
-    stream << a.Im << 'i';
+ostream& operator << ( ostream& stream, Complex& aRval ) {
+    stream << aRval.Re;
+    if( !( aRval.Im < 0 ) ) stream << '+';
+    stream << aRval.Im << 'i';
     return stream;
 }
 
@@ -159,9 +180,9 @@ Complex operator- ( const double& aLval, const Complex& aRval ) {
     return Result;
 }
 
-Complex operator* ( const double& aLval, const Complex& a ) {
-    Complex r;
-    r.Re = aLval * a.Re;
-    r.Im = aLval * a.Im;
-    return r;
+Complex operator* ( const double& aLval, const Complex& aRval ) {
+    Complex Result;
+    Result.Re = aLval * aRval.Re;
+    Result.Im = aLval * aRval.Im;
+    return Result;
 }
