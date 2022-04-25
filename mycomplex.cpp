@@ -1,36 +1,19 @@
-/*!
-    @file
-    @brief Файл с описанием методов класса Complex
-*/
-
 #include <iostream>
 #include <cmath>
 #include "mycomplex.h"
 
 using namespace std;
 
-/*!
-    @brief Конструктор класса
-    @param aRe Действительная составляющая
-    @param aIm Мнимая составляющая
-*/
 Complex::Complex( double aRe, double aIm ) {
     Re = aRe;
     Im = aIm;
 }
 
-/*!
-    @brief Конструктор класса
-    @param aRval Комплексное число
-*/
 Complex::Complex( const Complex& aRval ) {
     Re = aRval.Re;
     Im = aRval.Im;
 }
 
-/*!
-    @brief Деструктор класса
-*/
 Complex::~Complex() {
     Re = 0.0;
     Im = 0.0;
@@ -41,10 +24,6 @@ void Complex::Set( double aRe, double aIm ) {
     Im = aIm;
 }
 
-/*!
-    @brief Возвращает модуль комплексного числа
-    @return модуль комплексного числа
-*/
 Complex::operator double() {
     return abs();
 }
