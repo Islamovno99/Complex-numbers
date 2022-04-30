@@ -48,3 +48,4 @@ class Complex {
         Complex& operator=  ( const double& );
 };
 #endif
+
