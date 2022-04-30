@@ -164,5 +164,4 @@ Complex operator* ( const double& aLval, const Complex& aRval ) {
     Result.Re = aLval * aRval.Re;
     Result.Im = aLval * aRval.Im;
     return Result;
-    
 }
