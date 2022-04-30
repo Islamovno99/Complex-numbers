@@ -9,5 +9,3 @@ bin/obj/testcmp.o: testcmp.cpp
 
 clean:
 	del bin\obj\*.o
-
-
